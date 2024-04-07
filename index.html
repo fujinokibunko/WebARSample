@@ -23,8 +23,13 @@
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="./asset/pattern-frame.patt">
          <!-- 3Dモデルを呼び出す rocation X軸,Y軸,Z軸-->
-	      <a-entity gltf-model="#torio" rotation="-90 -180 0"></a-entity>
-	      
+	      <a-entity
+                    scale="1.1493993628539523 1.1493993628539523 1.1493993628539523"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#torio"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
       </a-marker>
 
       <<!-- カメラを追加 -->
